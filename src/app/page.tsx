@@ -51,10 +51,10 @@ export default function HomePage() {
         <section>
           <div id="projects" className="max-w-screen-xl flex-col flex gap-8 text-center items-center mx-auto p-4">
             <h1>Projects</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 max-lg:justify-center items-center lg:place-items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-lg:justify-center items-center lg:place-items-center">
               {
                 projects.map((project, index) => (
-                  <Card key={index} className="max-w-96 w-full">
+                  <Card key={index} className="max-w-96 w-full h-full">
                     <CardHeader>
                       <CardTitle className="font-black">{project.name}</CardTitle>
                       <CardDescription className="text-primary">{project.description}</CardDescription>
