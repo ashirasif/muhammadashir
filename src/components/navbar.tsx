@@ -18,25 +18,20 @@ import {
 const NavbarMenu = () => {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="flex flex-col lg:flex-row">
+      <NavigationMenuList className="flex max-lg:bg-background p-2 rounded-md max-lg:border items-start flex-col lg:flex-row">
         <NavigationMenuItem>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Upcoming Events
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#project">
+            Projects
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Our Programs
+            Blog
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            About Us
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Contact Us
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#contact">
+            Contact
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -48,10 +43,10 @@ const NavbarMenu = () => {
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <nav className="w-full px-4 fixed top-0 z-50">
-      <div className='flex items-center justify-between gap-4'>
-        <Avatar className='w-28 h-24'>
-          <AvatarImage src="/images/signature.png" alt="@shadcn" />
+    <nav className="w-full">
+      <div className='flex items-center justify-between max-w-screen-xl mx-auto px-4 gap-4'>
+        <Avatar className='lg:w-28 lg:h-24 w-20 h-16'>
+          <AvatarImage src="/images/signature.png" alt="signature" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className='flex items-center gap-4'>

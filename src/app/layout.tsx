@@ -22,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={cn("dark selection:bg-red-900 font-sans", fontSans.variable)}>
+      <body className={cn("dark selection:bg-red-900 font-sans bg-no-repeat bg-cover", fontSans.variable)} style={{backgroundImage: "url('/images/blueshit.jpg')"}}>
         <Navbar />
         <main className="">{children}</main>
       </body>
