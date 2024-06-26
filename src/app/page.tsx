@@ -21,7 +21,7 @@ export default function HomePage() {
               <div className="text-center">
                 <h1>Introduction:</h1>
                 <p className="max-w-96">
-                  I'm a Full-Stack developer, with over 4
+                  I&apos;m a Full-Stack developer, with over 4
                   years of experience, writing web
                   applications for the future. (real)
                 </p>
@@ -30,7 +30,7 @@ export default function HomePage() {
                 </p>
                 <p className="max-w-96">
                   I mostly work on a freelance basis but
-                  every once in a while, I fancy a good ol'
+                  every once in a while, I fancy a good ol&apos;
                   9-5.
                 </p>
               </div>
