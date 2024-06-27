@@ -40,8 +40,9 @@ export default function HomePage() {
                   height={200}
                   src="/images/Black & White 1.png"
                   alt="ashir"
-                  className="w-full"
+                  className="w-full rounded-full"
                 />
+                <p className="muted text-center">I don&apos;t have good photos of me</p>
               </div>
             </div>
             <div></div>
